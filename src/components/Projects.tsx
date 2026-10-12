@@ -4,75 +4,75 @@ import { ArrowUpRight } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    name: "Lüks Showroom",
-    description: "Mərmər effekti keramoqranit ilə sərgi məkanı.",
+    name: "Marmo Calacatta",
+    description: "Mərmər effekti keramoqranit kolleksiyası.",
     location: "Bakı",
     type: "Kommersiya",
-    images: ["/assets/projects/project1-luxury.jpg"],
+    images: ["/assets/products/recmarmocalacata.jpeg"],
   },
   {
     id: 2,
-    name: "Yemək Salonu",
-    description: "Daş effekti keramoqranit ilə müasir reseptor.",
+    name: "Nicewood Beige",
+    description: "Taxta effekti keramoqranit kolleksiyası.",
     location: "Bakı",
     type: "Reseptor",
-    images: ["/assets/projects/project2-dining.jpg"],
+    images: ["/assets/products/nicewoodbeige.jpeg"],
   },
   {
     id: 3,
-    name: "Pablic Lavabo",
-    description: "Hər tərəfli dizayn ilə vanna otağı.",
+    name: "Beirut White",
+    description: "Açıq rəngli mərmər effekti keramoqranit kolleksiyası.",
     location: "Bakı",
     type: "Kommersiya",
-    images: ["/assets/projects/project3-bathroom.jpg"],
+    images: ["/assets/products/beirutwhite.jpeg"],
   },
   {
     id: 4,
-    name: "Dublin Layihəsi",
-    description: "Müasir interior dizayni.",
+    name: "Aspen Noce",
+    description: "Taxta effekti keramoqranit kolleksiyası.",
     location: "Bakı",
     type: "Kommersiya",
-    images: ["/assets/projects/dublin_a5c83.jpg.thumb.jpg"],
+    images: ["/assets/products/aspennoce.jpeg"],
   },
   {
     id: 5,
-    name: "Irona Koleksiyası",
-    description: "Keramoqranit ilə həyətə çevrilmiş fəza.",
+    name: "Tropez Antracite",
+    description: "Tünd rəngli daş effekti keramoqranit kolleksiyası.",
     location: "Bakı",
     type: "Yaşayış",
-    images: ["/assets/projects/irona_d8d78.jpg.thumb.jpg"],
+    images: ["/assets/products/tropezantracite.jpeg"],
   },
   {
     id: 6,
-    name: "Mothica Dizayni",
-    description: "Rənglərin harmoniyası ilə yaradılmış məkan.",
+    name: "Mothica Rose",
+    description: "Rose tonlarında keramoqranit kolleksiyası.",
     location: "Bakı",
     type: "Kommersiya",
-    images: ["/assets/projects/mothica_27e52.jpg.thumb.jpg"],
+    images: ["/assets/products/mothicarose.jpeg"],
   },
   {
     id: 7,
-    name: "Oscar Seriyası",
-    description: "Premium keramoqranit ilə şəxsi layihə.",
+    name: "Glam White",
+    description: "Açıq mərmər effekti keramoqranit kolleksiyası.",
     location: "Bakı",
     type: "Yaşayış",
-    images: ["/assets/projects/oscar_40x80_interior_01_92450.jpg.thumb.jpg"],
+    images: ["/assets/products/glamwhite.jpeg"],
   },
   {
     id: 8,
-    name: "Armani Koleksiyası",
-    description: "Zərif və müasir interior dizayni.",
+    name: "Cosmopolitan Crystal",
+    description: "Kristal görünüşlü mərmər effekti keramoqranit kolleksiyası.",
     location: "Bakı",
     type: "Kommersiya",
-    images: ["/assets/projects/armani_1_0b7eb.jpg.thumb.jpg"],
+    images: ["/assets/products/cosmopolitancrystal.jpeg"],
   },
   {
     id: 9,
-    name: "Venato Layihəsi",
-    description: "Natural təbii görünüş ilə məkan.",
+    name: "Rec Xtone Grey",
+    description: "Boz daş effekti keramoqranit kolleksiyası.",
     location: "Bakı",
     type: "Yaşayış",
-    images: ["/assets/projects/venato_1_2fbe9.jpg.thumb.jpg"],
+    images: ["/assets/products/recxtonegrey.jpeg"],
   },
 ];
 
@@ -88,13 +88,13 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <span className="text-sm font-medium text-primary/60 uppercase tracking-wider mb-4 block">
-            Portfoliomuz
+            Kolleksiyalarımız
           </span>
           <h2 className="heading-md sm:heading-lg mb-4">
-            Hazırlanmış Layihələr
+            Seçilmiş Kolleksiyalar
           </h2>
           <p className="text-primary/60 max-w-xl mx-auto">
-            Müştərilərimiz üçün həyata keçirdiyimiz layihələr
+            Məkanınıza uyğun keramoqranit kolleksiyalarından nümunələr
           </p>
         </motion.div>
 
