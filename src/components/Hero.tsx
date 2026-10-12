@@ -11,7 +11,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&w=1920')`,
+          backgroundImage: `url('/assets/products/cosmopolitancrystal.jpeg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

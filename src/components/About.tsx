@@ -71,7 +71,7 @@ export default function About() {
             <div className="absolute -inset-4 bg-accent-beige/30 rounded-3xl -z-10" />
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-soft-xl">
               <img
-                src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/assets/products/beirutwhite.jpeg"
                 alt="Premium keramoqranit mağazası"
                 className="w-full h-full object-cover img-zoom"
               />
