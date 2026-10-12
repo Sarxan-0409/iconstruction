@@ -1,78 +1,77 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
     id: 1,
-    name: "Marmo Calacatta",
-    description: "Mərmər effekti keramoqranit kolleksiyası.",
-    location: "Bakı",
-    type: "Kommersiya",
-    images: ["/assets/products/recmarmocalacata.jpeg"],
+    name: 'Lüks Showroom',
+    description: 'Mərmər effekti keramoqranit ilə sərgi məkanı.',
+    location: 'Bakı',
+    type: 'Kommersiya',
+    images: ['/assets/projects/project1-luxury.jpg'],
   },
   {
     id: 2,
-    name: "Nicewood Beige",
-    description: "Taxta effekti keramoqranit kolleksiyası.",
-    location: "Bakı",
-    type: "Reseptor",
-    images: ["/assets/products/nicewoodbeige.jpeg"],
+    name: 'Yemək Salonu',
+    description: 'Daş effekti keramoqranit ilə müasir reseptor.',
+    location: 'Bakı',
+    type: 'Reseptor',
+    images: ['/assets/projects/project2-dining.jpg'],
   },
   {
     id: 3,
-    name: "Beirut White",
-    description: "Açıq rəngli mərmər effekti keramoqranit kolleksiyası.",
-    location: "Bakı",
-    type: "Kommersiya",
-    images: ["/assets/products/beirutwhite.jpeg"],
+    name: 'Pablic Lavabo',
+    description: 'Hər tərəfli dizayn ilə vanna otağı.',
+    location: 'Bakı',
+    type: 'Kommersiya',
+    images: ['/assets/projects/project3-bathroom.jpg'],
   },
   {
     id: 4,
-    name: "Aspen Noce",
-    description: "Taxta effekti keramoqranit kolleksiyası.",
-    location: "Bakı",
-    type: "Kommersiya",
-    images: ["/assets/products/aspennoce.jpeg"],
+    name: 'Dublin Layihəsi',
+    description: 'Müasir interior dizayni.',
+    location: 'Bakı',
+    type: 'Kommersiya',
+    images: ['/assets/projects/dublin_a5c83.jpg.thumb.jpg'],
   },
   {
     id: 5,
-    name: "Tropez Antracite",
-    description: "Tünd rəngli daş effekti keramoqranit kolleksiyası.",
-    location: "Bakı",
-    type: "Yaşayış",
-    images: ["/assets/products/tropezantracite.jpeg"],
+    name: 'Irona Koleksiyası',
+    description: 'Keramoqranit ilə həyətə çevrilmiş fəza.',
+    location: 'Bakı',
+    type: 'Yaşayış',
+    images: ['/assets/projects/irona_d8d78.jpg.thumb.jpg'],
   },
   {
     id: 6,
-    name: "Mothica Rose",
-    description: "Rose tonlarında keramoqranit kolleksiyası.",
-    location: "Bakı",
-    type: "Kommersiya",
-    images: ["/assets/products/mothicarose.jpeg"],
+    name: 'Mothica Dizayni',
+    description: 'Rənglərin harmoniyası ilə yaradılmış məkan.',
+    location: 'Bakı',
+    type: 'Kommersiya',
+    images: ['/assets/projects/mothica_27e52.jpg.thumb.jpg'],
   },
   {
     id: 7,
-    name: "Glam White",
-    description: "Açıq mərmər effekti keramoqranit kolleksiyası.",
-    location: "Bakı",
-    type: "Yaşayış",
-    images: ["/assets/products/glamwhite.jpeg"],
+    name: 'Oscar Seriyası',
+    description: 'Premium keramoqranit ilə şəxsi layihə.',
+    location: 'Bakı',
+    type: 'Yaşayış',
+    images: ['/assets/projects/oscar_40x80_interior_01_92450.jpg.thumb.jpg'],
   },
   {
     id: 8,
-    name: "Cosmopolitan Crystal",
-    description: "Kristal görünüşlü mərmər effekti keramoqranit kolleksiyası.",
-    location: "Bakı",
-    type: "Kommersiya",
-    images: ["/assets/products/cosmopolitancrystal.jpeg"],
+    name: 'Armani Koleksiyası',
+    description: 'Zərif və müasir interior dizayni.',
+    location: 'Bakı',
+    type: 'Kommersiya',
+    images: ['/assets/projects/armani_1_0b7eb.jpg.thumb.jpg'],
   },
   {
     id: 9,
-    name: "Rec Xtone Grey",
-    description: "Boz daş effekti keramoqranit kolleksiyası.",
-    location: "Bakı",
-    type: "Yaşayış",
-    images: ["/assets/products/recxtonegrey.jpeg"],
+    name: 'Venato Layihəsi',
+    description: 'Natural təbii görünüş ilə məkan.',
+    location: 'Bakı',
+    type: 'Yaşayış',
+    images: ['/assets/projects/venato_1_2fbe9.jpg.thumb.jpg'],
   },
 ];
 
@@ -88,13 +87,13 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <span className="text-sm font-medium text-primary/60 uppercase tracking-wider mb-4 block">
-            Kolleksiyalarımız
+            Portfoliomuz
           </span>
           <h2 className="heading-md sm:heading-lg mb-4">
-            Seçilmiş Kolleksiyalar
+            Hazırlanmış Layihələr
           </h2>
           <p className="text-primary/60 max-w-xl mx-auto">
-            Məkanınıza uyğun keramoqranit kolleksiyalarından nümunələr
+            Müştərilərimiz üçün həyata keçirdiyimiz layihələr
           </p>
         </motion.div>
 
@@ -114,6 +113,7 @@ export default function Projects() {
                     src={project.images[0]}
                     alt={project.name}
                     className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
