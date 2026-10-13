@@ -7,7 +7,7 @@ const projects = [
     description: 'Mərmər effekti keramoqranit ilə sərgi məkanı.',
     location: 'Bakı',
     type: 'Kommersiya',
-    images: ['/assets/projects/project1-luxury.jpg'],
+    images: ['/assets/projects/about-interior.jpg'],
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projects = [
     description: 'Daş effekti keramoqranit ilə müasir reseptor.',
     location: 'Bakı',
     type: 'Reseptor',
-    images: ['/assets/projects/project2-dining.jpg'],
+    images: ['/assets/projects/about-interior.jpg'],
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const projects = [
     description: 'Hər tərəfli dizayn ilə vanna otağı.',
     location: 'Bakı',
     type: 'Kommersiya',
-    images: ['/assets/projects/project3-bathroom.jpg'],
+    images: ['/assets/projects/about-interior.jpg'],
   },
   {
     id: 4,
@@ -112,7 +112,8 @@ export default function Projects() {
                   <img
                     src={project.images[0]}
                     alt={project.name}
-                    className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-80 object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                    decoding="async"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
