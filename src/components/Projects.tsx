@@ -112,7 +112,7 @@ export default function Projects() {
                   <img
                     src={project.images[0]}
                     alt={project.name}
-                    className="w-full h-64 object-cover object-center transition-transform duration-700 group-hover:scale-105 sm:h-72"
+                    className="w-full h-52 object-cover object-center transition-transform duration-700 group-hover:scale-[1.02] sm:h-60"
                     decoding="async"
                     loading="lazy"
                   />
