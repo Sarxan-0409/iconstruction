@@ -137,7 +137,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 mt-6 py-4 px-6 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors"
               >
-                <MessageCircle className="w-5 h-5" />          </svg>
+                <MessageCircle className="w-5 h-5" />
                 <span className="font-medium">WhatsApp ilə Yazın</span>
               </a>
             </div>
