@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ChevronRight, ZoomIn, Share2, Heart, MessageCircle, Phone, ArrowLeft } from 'lucide-react';
@@ -81,6 +81,13 @@ export default function ProductPage() {
   const [selectedImage, setSelectedImage] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
 
+  // Start each product page at the top instead of keeping the previous scroll position.
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    setSelectedImage(0);
+    setIsZoomed(false);
+  }, [id]);
+
   if (!product) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -109,9 +116,9 @@ export default function ProductPage() {
 
         <Link
           to="/catalog"
-          className="inline-flex items-center gap-2 text-sm text-primary/60 hover:text-primary mb-8 transition-colors"
+          className="inline-flex items-center justify-center gap-2 mb-8 px-5 py-3 rounded-xl border-2 border-primary/20 bg-white text-primary font-semibold shadow-sm hover:bg-primary hover:text-white hover:border-primary hover:shadow-md transition-all duration-200"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-5 h-5" />
           Kataloqa Qayıt
         </Link>
 
