@@ -81,11 +81,16 @@ const surfaces = [...new Set(products.map((p) => p.surface))];
 const categories = [...new Set(products.map((p) => p.category))];
 
 export default function ProductCatalog() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState('');
   const [selectedCollection, setSelectedCollection] = useState('');
   const [selectedColor, setSelectedColor] = useState('');
   const [selectedSurface, setSelectedSurface] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState(() => searchParams.get('category') || '');
+
+  useEffect(() => {
+    setSelectedCategory(searchParams.get('category') || '');
+  }, [searchParams]);
   const [showFilters, setShowFilters] = useState(false);
   const [gridView, setGridView] = useState<'large' | 'small'>('large');
   const [sortBy, setSortBy] = useState('name');
@@ -117,6 +122,7 @@ export default function ProductCatalog() {
     setSelectedSurface('');
     setSelectedCategory('');
     setSearch('');
+    setSearchParams({});
   };
 
   const activeFiltersCount = [selectedCollection, selectedColor, selectedSurface, selectedCategory].filter(Boolean).length;
@@ -259,7 +265,14 @@ export default function ProductCatalog() {
                   <label className="text-sm text-primary/60 mb-2 block">Kateqoriya</label>
                   <select
                     value={selectedCategory}
-                    onChange={(e) => setSelectedCategory(e.target.value)}
+                    onChange={(e) => {
+                      const category = e.target.value;
+                      setSelectedCategory(category);
+                      const nextParams = new URLSearchParams(searchParams);
+                      if (category) nextParams.set('category', category);
+                      else nextParams.delete('category');
+                      setSearchParams(nextParams, { replace: true });
+                    }}
                     className="w-full px-4 py-3 bg-white rounded-xl border border-secondary focus:border-primary/20 focus:outline-none"
                   >
                     <option value="">Hamısı</option>
