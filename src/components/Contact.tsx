@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, Send, MessageCircle, CheckCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -137,7 +137,24 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 mt-6 py-4 px-6 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors"
               >
-                <MessageCircle className="w-5 h-5" />
+                <svg
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.4 11.7a8.35 8.35 0 0 1-12.3 7.35L3.6 20.4l1.35-4.35A8.4 8.4 0 1 1 20.4 11.7Z"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M8.2 7.7c.25-.5.5-.5.8-.5h.45c.2 0 .4.05.55.4l.7 1.65c.1.25.1.45-.05.65l-.55.7c-.15.2-.15.35 0 .6.45.75 1.1 1.4 1.85 1.85.25.15.4.15.6 0l.7-.55c.2-.15.4-.15.65-.05l1.65.7c.35.15.4.35.4.55v.45c0 .3 0 .55-.5.8-.45.25-1.2.4-2.1.15-1.05-.3-2.3-1.05-3.35-2.1s-1.8-2.3-2.1-3.35c-.25-.9-.1-1.65.15-2.1Z"
+                    fill="currentColor"
+                  />
+                </svg>
                 <span className="font-medium">WhatsApp ilə Yazın</span>
               </a>
             </div>
