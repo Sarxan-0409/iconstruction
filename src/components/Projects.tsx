@@ -7,7 +7,7 @@ const projects = [
     description: 'Mərmər effekti keramoqranit ilə sərgi məkanı.',
     location: 'Bakı',
     type: 'Kommersiya',
-    images: ['https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920'],
+    images: ['/assets/projects/project1-luxury.jpg'],
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projects = [
     description: 'Daş effekti keramoqranit ilə müasir reseptor.',
     location: 'Bakı',
     type: 'Reseptor',
-    images: ['https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg?auto=compress&cs=tinysrgb&w=1920'],
+    images: ['/assets/projects/project2-dining.jpg'],
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const projects = [
     description: 'Hər tərəfli dizayn ilə vanna otağı.',
     location: 'Bakı',
     type: 'Kommersiya',
-    images: ['https://images.pexels.com/photos/6585759/pexels-photo-6585759.jpeg?auto=compress&cs=tinysrgb&w=1920'],
+    images: ['/assets/projects/project3-bathroom.jpg'],
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const projects = [
     description: 'Müasir interior dizayni.',
     location: 'Bakı',
     type: 'Kommersiya',
-    images: ['https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1920'],
+    images: ['/assets/projects/dublin_a5c83.jpg.thumb.jpg'],
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const projects = [
     description: 'Keramoqranit ilə həyətə çevrilmiş fəza.',
     location: 'Bakı',
     type: 'Yaşayış',
-    images: ['https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&w=1920'],
+    images: ['/assets/projects/irona_d8d78.jpg.thumb.jpg'],
   },
   {
     id: 6,
@@ -47,7 +47,7 @@ const projects = [
     description: 'Rənglərin harmoniyası ilə yaradılmış məkan.',
     location: 'Bakı',
     type: 'Kommersiya',
-    images: ['https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&w=1920'],
+    images: ['/assets/projects/mothica_27e52.jpg.thumb.jpg'],
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ const projects = [
     description: 'Premium keramoqranit ilə şəxsi layihə.',
     location: 'Bakı',
     type: 'Yaşayış',
-    images: ['https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1920'],
+    images: ['/assets/projects/oscar_40x80_interior_01_92450.jpg.thumb.jpg'],
   },
   {
     id: 8,
@@ -63,7 +63,7 @@ const projects = [
     description: 'Zərif və müasir interior dizayni.',
     location: 'Bakı',
     type: 'Kommersiya',
-    images: ['https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1920'],
+    images: ['/assets/projects/armani_1_0b7eb.jpg.thumb.jpg'],
   },
   {
     id: 9,
@@ -71,7 +71,7 @@ const projects = [
     description: 'Natural təbii görünüş ilə məkan.',
     location: 'Bakı',
     type: 'Yaşayış',
-    images: ['https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1920'],
+    images: ['/assets/projects/venato_1_2fbe9.jpg.thumb.jpg'],
   },
 ];
 
