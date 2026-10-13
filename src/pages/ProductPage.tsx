@@ -196,7 +196,7 @@ export default function ProductPage() {
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="p-4 bg-secondary/30 rounded-2xl">
                 <span className="text-sm text-primary/60 block mb-1">Kateqoriya</span>
-                <span className="font-medium">{product.category}</span>
+                <Link to={`/catalog?category=${encodeURIComponent(product.category || '')}`} className="font-medium hover:text-primary underline-offset-4 hover:underline">{product.category}</Link>
               </div>
               <div className="p-4 bg-secondary/30 rounded-2xl">
                 <span className="text-sm text-primary/60 block mb-1">Rəng</span>
