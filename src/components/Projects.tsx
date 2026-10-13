@@ -7,7 +7,7 @@ const projects = [
     description: 'Mərmər effekti keramoqranit ilə sərgi məkanı.',
     location: 'Bakı',
     type: 'Kommersiya',
-    images: ['/assets/projects/about-interior.jpg'],
+    images: ['/assets/projects/project1-luxury.jpg'],
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projects = [
     description: 'Daş effekti keramoqranit ilə müasir reseptor.',
     location: 'Bakı',
     type: 'Reseptor',
-    images: ['/assets/projects/about-interior.jpg'],
+    images: ['/assets/projects/project2-dining.jpg'],
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const projects = [
     description: 'Hər tərəfli dizayn ilə vanna otağı.',
     location: 'Bakı',
     type: 'Kommersiya',
-    images: ['/assets/projects/about-interior.jpg'],
+    images: ['/assets/projects/project3-bathroom.jpg'],
   },
   {
     id: 4,
